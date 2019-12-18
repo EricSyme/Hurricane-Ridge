@@ -1,0 +1,145 @@
+
+#white {
+    color: floralwhite;}
+
+#red {
+    color: red;
+}
+
+#black {
+    color: black;
+}
+
+.row-header{
+    margin:0px auto;
+    padding:0px auto;
+}
+
+.row-content {
+    margin:0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height:400px;
+}
+
+.bluebackground {
+    background-color: lightblue;
+}
+
+.footer{
+    background-color: transparent;
+    margin:0px auto;
+    padding: 20px 0px 20px 0px;
+}
+
+address{
+    font-size:80%;
+    margin:0px;
+    color:#0f0f0f;
+}
+
+.navbar-dark {
+    background-color:transparent;
+}
+.page-enter {
+    opacity: 0.01;
+    transform: translateX(-100%);
+}
+
+.page-enter-active {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 300ms ease-in;
+}
+
+.page-exit {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.page-exit-active {
+    opacity: 0.01;
+    transform: translateX(100%); 
+    transition: all 300ms ease-out;
+}
+
+.background {
+    background-image: url("/assets/images/gradient2.jpg");
+    background-repeat: no-repeat;
+	height:100%;
+	background-position: center;
+	background-size: cover;
+		/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	max-width: 100%;
+    overflow-x: hidden;
+}
+
+body > #root > div {
+    height: 100vh;
+}
+
+.centered {
+    height: 100vh; /* Magic here */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.nameTitle {
+    font-size: 80px;
+    /*-webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;*/
+}
+
+.megrim40 {
+    font-family: 'Megrim', cursive;
+    font-size: 40px;
+}
+
+.megrim20 {
+    font-family: 'Megrim', cursive;
+    font-size: 20px;
+}
+
+.textStroke {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:black;
+}
+
+.certificates {
+    background-image: url("/assets/images/library1.jpg");
+    margin: 50px auto;
+    padding:  0 50px 100px 50px;
+    background-repeat: no-repeat;
+	height:100%;
+	background-position: center;
+	background-size: cover;
+}
+
+.projects {
+    background-image: url("/assets/images/work2.jpg");
+    margin: 50px auto;
+    padding: 0 50px 100px 50px;
+    background-repeat: no-repeat;
+	height:100%;
+	background-position: center;
+	background-size: cover;
+}
+
+.home {
+    background-color:rgb(255, 250, 240, .70);
+    font-family: 'Passion One', cursive;
+	height:auto;
+    margin: 0 0 0 0;
+    padding: 0 0 15px 0;
+}
+
+.passion20 {
+    font-family: 'Passion One', cursive;
+}
+
+.bioPic {
+    width: 100%;
+    height: auto;
+}
