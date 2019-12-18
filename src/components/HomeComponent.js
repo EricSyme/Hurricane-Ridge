@@ -33,19 +33,19 @@ function Home(props) {
         </div>
         <div className="row align-items-start home">
             <div className="col-12 col-md m-1">
-                <h3>PROJECTS</h3>
+                <h3>Day Rates and Passes</h3>
                 <Link to="/projects">
                 <RenderCard item={props.project}/>
                 </Link>
             </div>
             <div className="col-12 col-md m-1">
-                <h3>CERTIFICATES</h3>
+                <h3>Conditions and Cameras</h3>
                 <Link to="/certificates">
                 <RenderCard item={props.certificate} />
                 </Link>
             </div>
             <div className="col-12 col-md m-1">
-                <h3>BIOGRAPHY</h3>
+                <h3>Special Events and Calendar</h3>
                 <Link to="/biography">
                 <RenderCard item={props.biography} />
                 </Link>
