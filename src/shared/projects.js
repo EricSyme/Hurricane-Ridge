@@ -2,20 +2,20 @@ export const PROJECTS =
     [
         {
             id: 0,
-            name:'Projects',
+            name:'Come Play With Us!',
             image: '/assets/images/work2.jpg',
             category: 'home',
             featured: true,
-            description:'Here you will find projects that are underway or finished. This entire portfolio website is the main project, and is built with the React JavaScript library; SPA, Redux, and Thunk. '
+            description:'Information on daily rates, season passes, and regional punch cards.  Trail Maps.  Nordic trail information, passes, rental rates and maps.'
         },
         {
             id: 1,
-            name:'API Key -- My 1st Weather App',
-            image: '/assets/images/seattle.png',
+            name:'Skiing & Riding',
+            image: '/assets/images/ridgemap.jpg',
             category: 'mains',
             featured: false,
             sandbox: "https://codesandbox.io/embed/myweatherapp-l5jly?fontsize=14",
-            description:'This solo project fetches an API from openweathermap.org and returns data.  This simple app uses three components and is of basic layout. The goal was to learn how to use an API key and how to structure basic data return.  One slightly challenging detail was that the temperature data from the API returns in Kelvin, and I needed to find out how to convert to Fehrenheit. The next step is to call a geo-location API and load data associated to the location of the user as well as refine the search field. **This code does work on my home machine, and I am working on getting it to work via CodeSandbox...stay tuned! '
+            description:'Hurricane Ridge Ski and Snowboard Area is located in the Olympic National Park, 17 miles south of Port Angeles, Washington, one of only two remaining lift operations in the National Parks. Rising a mile high, Hurricane Ridge offers winter recreation and activities and features winter vistas unmatched anywhere in the Pacific Northwest. It is a small, family oriented ski area, offering to residents and visitors alike a quality winter sports experience, without the high cost or congestion of most ski areas.  The Ridge boasts some groomed areas, but for the accomplished skier or snowboarder the steeps, bowls and glades are well worth the effort it takes to get there.  With a summit elevation of 5,240 feet, the average annual snowfall is 400-plus inches. LIFTS -- We have 3 surface lifts at Hurricane Ridge: "The Bunny" our beginner row tow lift, "The Intermediate" rope tow lift, and "The Poma" platter lift.'
         },
         {
             id: 2,

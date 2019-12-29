@@ -26,6 +26,10 @@
     background-color: lightblue;
 }
 
+.uniformsize {
+    height: 200px;
+}
+
 .footer{
     background-color: transparent;
     margin:0px auto;

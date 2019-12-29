@@ -42,15 +42,6 @@ class Header extends Component {
                             <NavItem>
                                 <NavLink className="nav-link textStroke" to='/contactus'><span className="fa fa-address-card fa-lg"></span> Contact</NavLink>
                             </NavItem>
-                            <NavItem>
-                                <NavLink className="nav-link textStroke" target="_blank" to="https://www.linkedin.com/in/eric-syme-660985183/"><span className="fa fa-linkedin"> LinkedIn</span></NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink className="nav-link textStroke" target="_blank" to="https://github.com/EricSyme"><span className="fa fa-github"> GitHub</span></NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink className="nav-link textStroke" to="mailto:eric.onetenbalm@gmail.com"><span className="fa fa-envelope-o"> Email</span></NavLink>
-                            </NavItem>
                             </Nav>
                         </Collapse>
                     </div>

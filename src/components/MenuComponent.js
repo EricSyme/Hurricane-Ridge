@@ -12,13 +12,14 @@ function RenderMenuItem ({project}) {
         <Card>
             <CardTitle id="black">{project.name}</CardTitle>
             <Link to={`/projects/${project.id}`} >
-                <CardImg width="100%" src={project.image} alt={project.name} />
+                <CardImg className= "uniformsize"width="100%" src={project.image} alt={project.name} />
                 <CardImgOverlay>
                     
                 </CardImgOverlay>
             </Link>
         </Card>
     );
+
 }
 
 const Menu = (props) => {
@@ -41,10 +42,10 @@ const Menu = (props) => {
             <div className="row">
                 <Breadcrumb>
                     <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
-                    <BreadcrumbItem active>Projects</BreadcrumbItem>
+                    <BreadcrumbItem active>Day Rates and Passes</BreadcrumbItem>
                 </Breadcrumb>
                 <div className="col-12">
-                    <h3 className="textStroke" id="white">Projects</h3>
+                    <h3 className="" id="black">Day Rates and Passes</h3>
                     <hr />
                 </div>                
             </div>
