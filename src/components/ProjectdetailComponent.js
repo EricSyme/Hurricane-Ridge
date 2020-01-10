@@ -4,12 +4,14 @@ import { Link } from 'react-router-dom';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 import { FadeTransform, Fade, Stagger } from 'react-animation-components';
 import Iframe from 'react-iframe';
+import Goods from './GoodsComponent';
+
 
 
 
 function RenderProject({project}){
 
-    if(project.link === null){
+    if(project.table === true){
         return(
             <div className="col-12 col-md-5 m-1 mx-auto">
                 <FadeTransform in
@@ -20,10 +22,13 @@ function RenderProject({project}){
                         <CardImg width="100%" src={(project.image)} alt={project.name}></CardImg>
                         <CardBody>
                             <CardTitle>{project.name}</CardTitle>
-                            <CardText>{project.description}</CardText>
+                            <CardText>{project.description}
+                            
+                            </CardText>
                         </CardBody>
                     </Card>
                     <br/>
+                    <Goods />
                 </FadeTransform>
             </div>
         );
