@@ -28,7 +28,6 @@ function RenderProject({project}){
                         </CardBody>
                     </Card>
                     <br/>
-                    <Goods />
                 </FadeTransform>
             </div>
         );

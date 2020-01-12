@@ -37,6 +37,7 @@ const Menu = (props) => {
             );
         }
     });
+    
     return (
         <div className="container projects">
             <div className="row">

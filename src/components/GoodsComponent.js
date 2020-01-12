@@ -11,51 +11,41 @@ const Goods = (props) => {
     const goods = props.goods.map((good) => {
     if(good.cost !== null){
         return(
-            <tr key={id}>
-               <td>{id}</td>
-               <td>{name}</td>
-               <td>{cost}</td>
-               <td>{description}</td>
+            <tr key={good.id} className="col-12 col-md-4 m-1 mx-auto">
+               <td>{good.id}</td>
+               <td>{good.name}</td>
+               <td>{good.cost}</td>
+               <td>{good.description}</td>
             </tr>
         );
-    }
-    })
-});
-
-
-class Goods extends Component {
-    constructor(props) {
-        super(props)
-
-    }
-
-    renderGoodsData() {
-        return this.props.goods.map((good, index) => {
-            const { id, name, cost, description } = good //destructuring
-            return(
-                <tr key={id}>
-                    <td>{id}</td>
-                    <td>{name}</td>
-                    <td>{cost}</td>
-                    <td>{description}</td>
-                </tr>
-            );
-        });
-    }
-
-    render(){
-        return(
-            <div>
-                <h1>All-day Lift Prices</h1>
-                <table id= 'goods'>
-                    <tbody>
-                        {this.renderGoodsData()}
-                    </tbody>
-                </table>
-            </div>
+    } else {
+        return (
+            <div></div>
         );
-    }
+        }
+    });
+
+    return(
+        /*<div className="row">
+                <Breadcrumb>
+                    <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
+                    <BreadcrumbItem active>Day Rates and Passes</BreadcrumbItem>
+                </Breadcrumb>
+                <div className="col-12">
+                    <h3 className="" id="black">Day Rates and Passes</h3>
+                    <hr />
+                </div>                
+            </div>*/ 
+        <div className="container projects">
+            
+            <div className="row">
+                {goods}
+            </div>
+        </div>
+    );
 }
+
+
 
 
 export default Goods;
