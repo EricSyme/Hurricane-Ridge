@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Control, LocalForm, Errors } from 'react-redux-form';
 import { FadeTransform, Fade, Stagger } from 'react-animation-components';
 import Iframe from 'react-iframe';
-import Goods from './GoodsComponent';
+import GoodsTable from './GoodsComponent';
 
 
 
@@ -18,6 +18,9 @@ function RenderProject({project}){
                     transformProps={{
                         exitTransform: 'scale(0.5) translateY(-50%)'
                     }}>
+                    <div>
+                        <h1>test</h1>
+                    </div>
                     <Card>
                         <CardImg width="100%" src={(project.image)} alt={project.name}></CardImg>
                         <CardBody>

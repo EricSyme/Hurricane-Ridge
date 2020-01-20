@@ -16,11 +16,9 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 
 
-
-
-
 const mapStateToProps = state => {
   return {
+    goods: state.goods,
     projects: state.projects,
     comments: state.comments,
     certificates: state.certificates,
@@ -51,7 +49,6 @@ class Main extends Component {
             project={this.props.projects.filter((project) => project.featured)[0]}
             biography={this.props.biographies.filter((biography) => biography.featured)[0]}
             certificate={this.props.certificates.filter((certificate) => certificate.featured)[0]}
-            category={this.props.categories.filter((category) => category.featured)[0]}
           />
       );
     }
@@ -63,14 +60,18 @@ class Main extends Component {
           />
       );
     }
-
+// <Goods good={this.props.goods.filter((good) => good.id === parseInt(match.params.goodId,10))[0]}/>
 
     const ProjectWithId = ({match}) => {
       return(
-        <ProjectDetail project={this.props.projects.filter((project) => project.id === parseInt(match.params.projectId,10))[0]}
-        comments={this.props.comments.filter((comment) => comment.projectId === parseInt(match.params.projectId,10))}
-        addComment={this.props.addComment}
-      />
+        <div>
+          <ProjectDetail 
+          
+          project={this.props.projects.filter((project) => project.id === parseInt(match.params.projectId,10))[0]}
+          comments={this.props.comments.filter((comment) => comment.projectId === parseInt(match.params.projectId,10))}
+          addComment={this.props.addComment}
+          />
+      </div>
       );
     };
 

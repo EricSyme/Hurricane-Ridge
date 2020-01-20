@@ -23,7 +23,6 @@ function RenderMenuItem ({project}) {
 }
 
 const Menu = (props) => {
-
     const menu = props.projects.map((project) => {
         if (project.featured !== true){
             return (

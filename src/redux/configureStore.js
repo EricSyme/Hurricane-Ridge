@@ -4,6 +4,7 @@ import { Comments } from './comments';
 import { Categories } from './categories';
 import { Certificates } from './certificates';
 import { Biography } from './biography';
+import { Goods } from './goods';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger';
 import { createForms } from 'react-redux-form';
@@ -17,6 +18,7 @@ export const ConfigureStore = () => {
         combineReducers({
             projects: Projects,
             comments: Comments,
+            goods: Goods,
             certificates: Certificates,
             categories: Categories,
             biography: Biography,
