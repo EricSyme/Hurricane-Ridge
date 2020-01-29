@@ -10,12 +10,7 @@ import { FadeTransform, Fade, Stagger } from 'react-animation-components';
 function RenderGoodsTableItem ({good}) {
     return (
         <div>
-            <tr key={good.id}>
-                <td>{good.id}</td>
-                <td>{good.name}</td>
-                <td>{good.cost}</td>
-                <td>{good.description}</td>
-            </tr>
+<h1>{good.name}{good.description}</h1>
         </div>
     );
 }
@@ -23,9 +18,9 @@ function RenderGoodsTableItem ({good}) {
 
 const GoodsTable = (props) => {
     const table = props.goods.map((good) => {
-        if (good.cost !== null) {
+        if (good.table === true) {
             return (
-                <div key= {good.id} className="col-12 col-md-4 m-1 mx-auto">
+                <div key={good.id} className="col-12 col-md-4 m-1 mx-auto">
                     <RenderGoodsTableItem good={good} />
                 </div>
             );
@@ -37,13 +32,9 @@ const GoodsTable = (props) => {
     })
     
         return (
-         <div>
+         <div className="row">
             <h1 id='title'>React Dynamic Table</h1>
-            <table id='goods'>
-               <tbody>
-                  {table}
-               </tbody>
-            </table>
+            {table}
          </div>
         );
  }

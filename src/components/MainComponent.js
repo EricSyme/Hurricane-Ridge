@@ -60,8 +60,6 @@ class Main extends Component {
           />
       );
     }
-// <Goods good={this.props.goods.filter((good) => good.id === parseInt(match.params.goodId,10))[0]}/>
-
     const ProjectWithId = ({match}) => {
       return(
         <div>

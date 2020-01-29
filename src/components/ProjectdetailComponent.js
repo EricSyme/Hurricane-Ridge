@@ -5,6 +5,7 @@ import { Control, LocalForm, Errors } from 'react-redux-form';
 import { FadeTransform, Fade, Stagger } from 'react-animation-components';
 import Iframe from 'react-iframe';
 import GoodsTable from './GoodsComponent';
+import Menu from './MenuComponent';
 
 
 
@@ -13,23 +14,21 @@ function RenderProject({project}){
 
     if(project.table === true){
         return(
-            <div className="col-12 col-md-5 m-1 mx-auto">
+            <div className="col-12 m-1 mx-auto">
                 <FadeTransform in
                     transformProps={{
                         exitTransform: 'scale(0.5) translateY(-50%)'
                     }}>
-                    <div>
+                        
                         <h1>test</h1>
-                    </div>
-                    <Card>
-                        <CardImg width="100%" src={(project.image)} alt={project.name}></CardImg>
-                        <CardBody>
-                            <CardTitle>{project.name}</CardTitle>
-                            <CardText>{project.description}
-                            
-                            </CardText>
-                        </CardBody>
-                    </Card>
+                        <Card>
+                            <CardImg width="100%" src={(project.image)} alt={project.name}></CardImg>
+                            <CardBody>
+                                <CardTitle>{project.name}</CardTitle>
+                                <CardText>{project.description}</CardText>
+                            </CardBody>
+                        </Card>
+                    
                     <br/>
                 </FadeTransform>
             </div>

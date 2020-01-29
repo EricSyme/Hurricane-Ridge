@@ -11,7 +11,7 @@ export const PROJECTS =
         {
             id: 1,
             name:'Day Rates and Passes',
-            image: '/assets/images/snowboarding.jpg',
+            image: '/assets/images/Snowboarding.jpg',
             category: 'mains',
             table: true,
             featured: false,

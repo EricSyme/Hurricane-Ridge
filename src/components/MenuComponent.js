@@ -7,7 +7,6 @@ import { Link } from 'react-router-dom';
 
 
 function RenderMenuItem ({project}) {
-    console.log("menu component", project.image)
     return (
         <Card>
             <CardTitle id="black">{project.name}</CardTitle>
