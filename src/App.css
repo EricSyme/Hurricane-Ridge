@@ -30,6 +30,10 @@
     height: 200px;
 }
 
+.tablePadding{
+    padding: 0px 20px 0px 0px;
+}
+
 .footer{
     background-color: transparent;
     margin:0px auto;

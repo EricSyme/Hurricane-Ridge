@@ -7,7 +7,47 @@ import Iframe from 'react-iframe';
 import GoodsTable from './GoodsComponent';
 import Menu from './MenuComponent';
 
+class Table extends Component {
+    constructor(props) {
+       super(props) //since we are extending class Table so we have to use super in order to override Component class constructor
+       this.state = { //state is by default an object
+          goods: [
+            { id: 0, name: 'ITEM', cost: 'USD', description: 'DESCRIPTION' },
+             { id: 1, name: 'The Bunny', cost: 21, description: 'Beginner rope-tow' },
+             { id: 2, name: 'The Intermediate', cost: 35, description: 'Intermediate rope-tow' },
+             { id: 3, name: 'The Poma', cost: 45, description: 'Our advanced Poma platter tow' },
+             { id: 4, name: 'Indy Pass', cost: 173, description: 'Heavy Discounts on local mountains' }
+          ]
+       }
+    }
 
+    renderTableData() {
+        return this.state.goods.map((good, index) => {
+           const { id, name, cost, description } = good //destructuring
+           return (
+              <tr key={id}>
+                 <td className="tablePadding">{name}</td>
+                 <td className="tablePadding">{cost}</td>
+                 <td className="tablePadding">{description}</td>
+              </tr>
+           )
+        })
+     }
+ 
+    render() { //Whenever our class runs, render method will be called automatically, it may have already defined in the constructor behind the scene.
+       return (
+          <div>
+             <h1 id='title'></h1>
+             <table id='goods'>
+               <tbody>
+                  {this.renderTableData()}
+               </tbody>
+            </table>
+          </div>
+       )
+    }
+ }
+ 
 
 
 function RenderProject({project}){
@@ -19,13 +59,12 @@ function RenderProject({project}){
                     transformProps={{
                         exitTransform: 'scale(0.5) translateY(-50%)'
                     }}>
-                        
-                        <h1>test</h1>
                         <Card>
                             <CardImg width="100%" src={(project.image)} alt={project.name}></CardImg>
                             <CardBody>
-                                <CardTitle>{project.name}</CardTitle>
                                 <CardText>{project.description}</CardText>
+                                <CardTitle>{project.name}</CardTitle>
+                                <Table/>
                             </CardBody>
                         </Card>
                     
