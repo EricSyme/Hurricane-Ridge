@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardImg, CardBody, CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
-
+import Iframe from 'react-iframe';
 
 
 
@@ -18,6 +18,24 @@ function RenderCertificate({certificate}){
     );
 }
 
+function RenderWebcam({certificate}){
+    if (certificate.webcam != null){
+    return(
+        <div className="webcamFull col-12 mx-auto">
+            <Iframe url={(certificate.webcam)}
+                    id="myId"
+                    className="myClassname"
+                    display="initial"
+                    position="relative"/>
+        </div>
+        );
+    } else {
+        return(
+            <div></div>
+        );
+    }
+}
+
 const CertificateDetail = (props) => {
     if (props.certificate != null){
         return (
@@ -32,8 +50,8 @@ const CertificateDetail = (props) => {
                         <hr />
                     </div>                
                 </div>
-                <div className="row">
-                    <RenderCertificate certificate={props.certificate} />
+                <div className=" row col-12 mx-auto">
+                    <RenderWebcam certificate={props.certificate} />
                 </div>
             </div>
         );

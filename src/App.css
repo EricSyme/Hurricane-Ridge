@@ -10,6 +10,11 @@
     color: black;
 }
 
+.webcamFull {
+    height: auto;
+    width: auto;
+}
+
 .row-header{
     margin:0px auto;
     padding:0px auto;
@@ -116,7 +121,7 @@ body > #root > div {
 }
 
 .certificates {
-    background-image: url("/assets/images/library1.jpg");
+    background-image: url("/assets/images/work2.jpg");
     margin: 50px auto;
     padding:  0 50px 100px 50px;
     background-repeat: no-repeat;

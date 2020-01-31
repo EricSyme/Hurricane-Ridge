@@ -7,12 +7,7 @@ function RenderCertMenuItem ({certificate}) {
     return (
         <Card>
             <CardTitle id="black">{certificate.name}</CardTitle>
-            <Link to={`/certificates/${certificate.id}`} >
-                <CardImg width="100%" src={certificate.image} alt={certificate.name} />
-                <CardImgOverlay>
-                    
-                </CardImgOverlay>
-            </Link>
+                <CardImg width="100%" src={certificate.webcam} alt={certificate.name} />
         </Card>
     );
 }
@@ -38,10 +33,10 @@ const CertMenu = (props) => {
             <div className="row ">
                     <Breadcrumb>
                         <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
-                        <BreadcrumbItem active>Certificates</BreadcrumbItem>
+                        <BreadcrumbItem active>Cameras</BreadcrumbItem>
                     </Breadcrumb>
                     <div className="col-12">
-                        <h3>Certificates</h3>
+                        <h3>Cameras</h3>
                         <hr />
                     </div>                
                 </div>

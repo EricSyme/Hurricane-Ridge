@@ -26,9 +26,9 @@ class Table extends Component {
            const { id, name, cost, description } = good //destructuring
            return (
               <tr key={id}>
-                 <td className="tablePadding">{name}</td>
-                 <td className="tablePadding">{cost}</td>
-                 <td className="tablePadding">{description}</td>
+                 <td className="tablePadding"><strong>{name}</strong></td>
+                 <td className="tablePadding"><strong>{cost}</strong></td>
+                 <td className="tablePadding"><strong>{description}</strong></td>
               </tr>
            )
         })
