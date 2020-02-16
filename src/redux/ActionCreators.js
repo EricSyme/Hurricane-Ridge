@@ -5,7 +5,6 @@ export const addComment = (projectId, rating, author, comment) => ({
     payload: {
         projectId: projectId,
         rating: rating,
-        author: author,
-        comment: comment
+        author: author
     }
 });

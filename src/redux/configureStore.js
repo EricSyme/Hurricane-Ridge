@@ -1,6 +1,5 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { Projects } from './projects';
-import { Comments } from './comments';
 import { Certificates } from './certificates';
 import { Biography } from './biography';
 import { Goods } from './goods';
@@ -17,7 +16,6 @@ export const ConfigureStore = () => {
         combineReducers({
             goods: Goods,
             projects: Projects,
-            comments: Comments,
             certificates: Certificates,
             biography: Biography,
             ...createForms({

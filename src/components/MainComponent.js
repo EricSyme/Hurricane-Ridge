@@ -18,9 +18,7 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 const mapStateToProps = state => {
   return {
-    goods: state.goods,
     projects: state.projects,
-    comments: state.comments,
     certificates: state.certificates,
     biographies: state.biography,
     categories: state.categories
@@ -64,9 +62,7 @@ class Main extends Component {
       return(
         <div>
           <ProjectDetail 
-          
           project={this.props.projects.filter((project) => project.id === parseInt(match.params.projectId,10))[0]}
-          comments={this.props.comments.filter((comment) => comment.projectId === parseInt(match.params.projectId,10))}
           addComment={this.props.addComment}
           />
       </div>

@@ -1,11 +1,11 @@
 import React from 'react';
-import { Card, CardImg, CardBody, CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import {/* Card, CardImg, CardBody, CardTitle,*/ Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import Iframe from 'react-iframe';
 
 
 
-function RenderCertificate({certificate}){
+/*function RenderCertificate({certificate}){
     return(
         <div className="col-12 m-1">
             <Card>
@@ -16,7 +16,7 @@ function RenderCertificate({certificate}){
             </Card>
         </div>
     );
-}
+}*/
 
 function RenderWebcam({certificate}){
     if (certificate.webcam != null){

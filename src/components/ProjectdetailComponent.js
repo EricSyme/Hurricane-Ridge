@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { Card, CardImg, CardText, CardBody, Modal, ModalHeader, ModalBody, CardTitle, Row, Breadcrumb, BreadcrumbItem, Button, Label, Col } from 'reactstrap';
+import { Card, CardImg, CardText, CardBody, CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
-import { Control, LocalForm, Errors } from 'react-redux-form';
-import { FadeTransform, Fade, Stagger } from 'react-animation-components';
-import Iframe from 'react-iframe';
-import GoodsTable from './GoodsComponent';
-import Menu from './MenuComponent';
+//import { Control, LocalForm, Errors } from 'react-redux-form';
+import { FadeTransform} from 'react-animation-components';
+//import Iframe from 'react-iframe';
+//import GoodsTable from './GoodsComponent';
+//import Menu from './MenuComponent';
 
 class Table extends Component {
     constructor(props) {
@@ -37,7 +37,7 @@ class Table extends Component {
     render() { //Whenever our class runs, render method will be called automatically, it may have already defined in the constructor behind the scene.
        return (
           <div>
-             <h1 id='title'></h1>
+             <h1 id='title'>Goods Table</h1>
              <table id='goods'>
                <tbody>
                   {this.renderTableData()}

@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import { Card, CardImg, CardText, CardBody, Modal, ModalHeader, ModalBody, CardTitle, Row, Breadcrumb, BreadcrumbItem, Button, Label, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { Control, LocalForm, Errors } from 'react-redux-form';
@@ -41,3 +41,4 @@ const GoodsTable = (props) => {
 
 
 export default GoodsTable;
+*/
